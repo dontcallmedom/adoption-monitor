@@ -98,8 +98,7 @@
     "keywords": [{"tag": "javascript", "kw": "screen.orientation"}, "screen.orientation.lock"]
   },
   "https://w3c.github.io/manifest/": {
-    "type": "html",
-    "tags": ["manifest"],
+    "tags": [["manifest", "html"]],
     "keywords": [{"tag": "html", "kw": ["link", "manifest"]}, "webmanifest", "beforeinstallprompt", "appinstalled"]
   },
   "https://w3c.github.io/wcag/guidelines/": {
@@ -151,8 +150,7 @@
     "tags": ["geolocation"]
   },
   "https://w3c.github.io/vibration/": {
-    "type": "javascript",
-    "tags": ["vibration"],
+    "tags": [["vibration","javascript"]],
     "keywords": ["navigator.vibrate"]
   },
   "https://w3c.github.io/trace-context/": {
@@ -168,8 +166,7 @@
     "tags": ["media-source"]
   },
   "https://w3c.github.io/picture-in-picture/": {
-    "type": "javascript",
-    "tags": ["picture-in-picture"],
+    "tags": [["picture-in-picture", "javascript"]],
     "keywords": ["enterpictureinpicture", "leavepictureinpicture", "exitPictureInPicture()", "requestPictureInPicture", "pictureInPictureElement"]
   },
   "https://w3c.github.io/media-capabilities/": {
@@ -186,8 +183,7 @@
     "keywords": ["mediaSession"]
   },
   "https://w3c.github.io/pointerevents/": {
-    "type": "javascript",
-    "tags": ["pointer-events"],
+    "tags": [["pointer-events", "javascript"]],
     "keywords": ["PointerEvent", "pointercancel", "pointerdown", "pointermove", "pointerover"]
   },
   "https://w3c.github.io/pub-manifest/": {
@@ -203,7 +199,7 @@
     "keywords": ["watchAvailability"]
   },
   "https://svgwg.org/svg2-draft/": {
-    "keywords": ["svg"]
+    "tags": ["svg"]
   },
   "https://w3c.github.io/webvtt/": {
     "tags": ["webvtt"]

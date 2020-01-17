@@ -11,7 +11,7 @@ const config = require("./config.json");
 // TODO: doesn't cover CSS specs at the moment
 const stackoverflow_filters = require("./spec-filters.json");
 
-const filter = {
+const queryOptions = {
   key: config.stackexchange.key,
   pagesize: 100,
   sort: 'activity',
@@ -23,22 +23,27 @@ const data = {};
 
 async function collectData() {
   for (let spec of Object.keys(stackoverflow_filters)) {
-    data[spec] = {tags:{}};
+    data[spec] = {tags:{}, keywords: {}};
     const tags = stackoverflow_filters[spec].tags || [];
+    let type = stackoverflow_filters[spec].type;
     for (let tag of tags) {
+      if (Array.isArray(tag)) {
+        type = tag[1];
+        tag = tag[0];
+      }
       data[spec].tags[tag] = {};
       const res = await promisify(context.questions.questions)
-      ({...filter,
-        tagged: tag + (stackoverflow_filters[spec].type ? ';' + stackoverflow_filters[spec].type : ''),
+      ({...queryOptions,
+        tagged: tag + (type ? ';' + type : ''),
         filter: '!9Z(-x-Q)8' // includes total of questions
        });
-      data[spec].tags[tag].type = stackoverflow_filters[spec].type;
+      data[spec].tags[tag].type = type;
       data[spec].tags[tag].total = res.total;
       data[spec].tags[tag].questions = res.items;
     }
     if (tags.length) {
       const res = await new Promise(
-        (res, rej) => context.tags.wiki({...filter
+        (res, rej) => context.tags.wiki({...queryOptions
                                          , filter: '!--fG1eTpRU.A' // includes full body of wiki
                                                                                                                         }, function(err, results) {
                                                                                                                           if (err) return rej(err);
@@ -47,6 +52,29 @@ async function collectData() {
       res.items.forEach(
         i => data[spec].tags[i.tag_name].wiki = i
       );
+    }
+    // Keywords
+    const keywords = stackoverflow_filters[spec].keywords || [];
+    type = stackoverflow_filters[spec].type;
+    for (let kw of keywords) {
+      if (Array.isArray(kw)) {
+        kw = '"' + kw.join('" "') + '"';
+      } else if (kw.kw) {
+        kw = '"' + kw.kw + '"';
+        type = kw.tag;
+      } else {
+        kw = '"' + kw + '"';
+      }
+      data[spec].keywords[kw] = {};
+      const tagged = type ? type : undefined;
+      const res = await promisify(context.search.advanced)(
+        {...queryOptions,
+         filter: '!9Z(-x-Q)8', // includes total of questions
+         q: kw,
+         tagged});
+      data[spec].keywords[kw].type = type;
+      data[spec].keywords[kw].total = res.total;
+      data[spec].keywords[kw].questions = res.items;
     }
   }
 }
