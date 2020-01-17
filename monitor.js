@@ -19,6 +19,8 @@ const queryOptions = {
   site: 'stackoverflow'
 };
 
+const wait = s => new Promise((res) => setTimeout(res, 1000*s));
+
 const data = {};
 
 async function collectData() {
@@ -37,6 +39,10 @@ async function collectData() {
         tagged: tag + (type ? ';' + type : ''),
         filter: '!9Z(-x-Q)8' // includes total of questions
        });
+      if (res.backoff) {
+        console.log("backing off for " + res.backoff);
+        await wait(res.backoff);
+      }
       data[spec].tags[tag].type = type;
       data[spec].tags[tag].total = res.total;
       data[spec].tags[tag].questions = res.items;
