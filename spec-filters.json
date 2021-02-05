@@ -33,7 +33,7 @@
   },
   "https://webaudio.github.io/web-audio-api/": {
     "type": "javascript",
-    "tags": ["web-audio-api"]
+    "tags": ["web-audio-api", "audiocontext"]
   },
   "http://webaudio.github.io/web-midi-api/": {
     "tags": ["web-midi"]
@@ -74,6 +74,8 @@
     "keywords": [{"tag": "javascript", "kw": "selectionstart"}, {"tag": "javascript", "kw": "selectionchange"}, {"tag": "javascript", "kw": "getSelection"}]
   },
   "https://w3c.github.io/uievents/": {
+    "type": "javascript",
+    "tags": ["mousewheel", "mouseevent"],
     "keywords": [{"tag": "javascript", "kw": "MouseEvent"}, {"tag": "javascript", "kw": "WheelEvent"}, {"tag": "javascript", "kw": "KeyboardEvent"}, {"tag": "javascript", "kw": "CompositionEvent"}, {"tag": "javascript", "kw": "UIEvent"}, {"tag": "javascript", "kw": "FocusEvent"}, {"tag": "javascript", "kw": "blur"}, {"tag": "javascript", "kw": "focus"}, {"tag": "javascript", "kw": "focusin"}, {"tag": "javascript", "kw": "focusout"}, {"tag": "javascript", "kw": "auxclick"}, {"tag": "javascript", "kw": "mousedown"}, {"tag": "javascript", "kw": "mouseenter"}, {"tag": "javascript", "kw": "mouseleave"}, {"tag": "javascript", "kw": "mousemove"}, {"tag": "javascript", "kw": "mouseout"}, {"tag": "javascript", "kw": "mouseover"}, {"tag": "javascript", "kw": "mouseup"}, {"tag": "javascript", "kw": "wheel"}, {"tag": "javascript", "kw": "beforeinput"}, {"tag": "javascript", "kw": "keydown"}, {"tag": "javascript", "kw": "keyup"}, {"tag": "javascript", "kw": "compositionstart"}, {"tag": "javascript", "kw": "compositionupdate"}, {"tag": "javascript", "kw": "compositionend"}]
   },
   "https://w3c.github.io/web-share/": {
@@ -300,5 +302,8 @@
   },
   "https://w3c.github.io/navigation-timing/": {
     "keywords": [["performance.getEntriesByType", "navigation"]]
+  },
+  "https://browserext.github.io/browserext/": {
+    "tags": ["browser-extension"]
   }
 }
