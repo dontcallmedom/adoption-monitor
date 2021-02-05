@@ -1,0 +1,33 @@
+name: Update data
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  push:
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Setup Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+    - name: Setup dependencies
+      run: |
+        echo '{"stackexchange":${{ secrets.STACKEXCHANGE_JSON }}}' > config.json
+        npm install
+    - name: Run monitor.js
+      run: node monitor.js
+    - name: Commit changes
+      run: |
+        git config user.name "monitor-bot"
+        git config user.email "<>"
+        git add results.json
+        git commit -m "Update monitor.json"
+        git show
+    - name: Push changes
+      run: |
+        git remote set-url --push origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+        git push origin HEAD:main
