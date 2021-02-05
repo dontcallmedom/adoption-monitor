@@ -86,4 +86,8 @@ async function collectData() {
 }
 
 collectData().then(() =>
-                   fs.writeFileSync('results.json', JSON.stringify(data, null, 2)));
+                   fs.writeFileSync('results.json', JSON.stringify(data, null, 2))).catch(e => {
+                     console.error("Collecting data failed:");
+                     console.error(e);
+                     process.exit(2);
+                   });
