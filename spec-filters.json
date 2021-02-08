@@ -35,7 +35,7 @@
     "type": "javascript",
     "tags": ["web-audio-api", "audiocontext"]
   },
-  "http://webaudio.github.io/web-midi-api/": {
+  "https://webaudio.github.io/web-midi-api/": {
     "tags": ["web-midi"]
   },
   "https://immersive-web.github.io/webxr/": {
