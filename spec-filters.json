@@ -336,5 +336,8 @@
   "https://wicg.github.io/background-sync/spec/": {
     "type": "javascript",
     "tags": [["background-sync", "javascript"]]
+  },
+  "https://www.khronos.org/registry/webgl/specs/latest/1.0/": {
+    "tags": ["webgl"]
   }
 }
