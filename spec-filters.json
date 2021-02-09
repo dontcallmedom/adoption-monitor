@@ -312,6 +312,9 @@
   "https://w3c.github.io/navigation-timing/": {
     "keywords": [["performance.getEntriesByType", "navigation"]]
   },
+  "https://wicg.github.io/speech-api/": {
+    "tags": ["webspeech-api"]
+  },
   "https://browserext.github.io/browserext/": {
     "tags": ["browser-extension"]
   },
