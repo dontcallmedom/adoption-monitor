@@ -417,5 +417,22 @@
   },
   "https://drafts.csswg.org/cssom/": {
     "tags": ["cssom"]
+  },
+  "https://dom.spec.whatwg.org/": {
+    "tags": ["dom", "shadow-dom", "dom-events", "domparser"]
+  },
+  "https://fetch.spec.whatwg.org/": {
+    "tags": ["fetch", "fetch-api", "cors", "preflight"],
+    "keywords": ["access-control-allow-origin"]
+  },
+  "https://xhr.spec.whatwg.org/": {
+    "tags": ["xmlhttprequest"]
+  },
+  "https://notifications.spec.whatwg.org/": {
+    "tags": ["web-notifications", "html5-notifications"]
+  },
+  "https://streams.spec.whatwg.org/": {
+    "tags": ["whatwg-streams-api"],
+    "keywords": ["ReadableStream"]
   }
 }
