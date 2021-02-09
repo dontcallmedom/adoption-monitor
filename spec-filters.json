@@ -200,6 +200,9 @@
     "type": "javascript",
     "keywords": ["watchAvailability"]
   },
+  "https://mathml-refresh.github.io/mathml-core/": {
+    "tags": ["mathml"]
+  },
   "https://svgwg.org/svg2-draft/": {
     "tags": ["svg"]
   },
