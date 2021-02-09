@@ -434,5 +434,17 @@
   "https://streams.spec.whatwg.org/": {
     "tags": ["whatwg-streams-api"],
     "keywords": ["ReadableStream"]
+  },
+  "https://html.spec.whatwg.org/": {
+    "tags": ["websocket", "server-sent-events", "eventsource", "local-storage", "web-worker", "html5-video", "html5-audio", "html5-history", "html5-appcache", "html-parsing", "xhtml", "lazy-loading", "multipartform-data", "multipart", "meta-tags"]
+  },
+  "https://html.spec.whatwg.org/#2dcontext": {
+    "tags": ["html5-canvas", "canvas"]
+  },
+  "https://html.spec.whatwg.org/#custom-elements": {
+    "tags": ["custom-element", "web-component", "html5-template", "html-imports"]
+  },
+  "https://html.spec.whatwg.org/#contenteditable": {
+    "tags": ["contenteditable", "execcommand"]
   }
 }
