@@ -235,6 +235,9 @@
   "https://w3c.github.io/webappsec-clear-site-data/": {
     "keywords": ["clear-site-data"]
   },
+  "https://w3c.github.io/webappsec-referrer-policy/": {
+    "tags": ["referrer-policy"]
+  },
   "https://w3c.github.io/permissions/": {
     "keywords": ["navigator.permissions"]
   },
