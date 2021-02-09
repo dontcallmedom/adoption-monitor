@@ -25,6 +25,7 @@ const data = {};
 
 async function collectData() {
   for (let spec of Object.keys(stackoverflow_filters)) {
+    console.log(spec);
     data[spec] = {tags:{}, keywords: {}};
     const tags = stackoverflow_filters[spec].tags || [];
     let type = stackoverflow_filters[spec].type;
@@ -43,8 +44,18 @@ async function collectData() {
         console.log("backing off for " + res.backoff);
         await wait(res.backoff);
       }
+      const res_recent = await promisify(context.search.advanced)
+      ({...queryOptions,
+        q: "[" + tag + "]" + (type ? '+[' + type +  ']': '') + '+created:90d..',
+        filter: '!9Z(-x-Q)8' // includes total of questions
+       });
+      if (res_recent.backoff) {
+        console.log("backing off for " + res_recent.backoff);
+        await wait(res_recent.backoff);
+      }
       data[spec].tags[tag].type = type;
       data[spec].tags[tag].total = res.total;
+      data[spec].tags[tag].total_recent = res_recent.total;
       data[spec].tags[tag].questions = res.items;
     }
     if (tags.length) {
@@ -71,6 +82,7 @@ async function collectData() {
       } else {
         kw = '"' + kw + '"';
       }
+      const kw_recent = kw + " created:90d..";
       data[spec].keywords[kw] = {};
       const tagged = type ? type : undefined;
       const res = await promisify(context.search.advanced)(
@@ -78,8 +90,14 @@ async function collectData() {
          filter: '!9Z(-x-Q)8', // includes total of questions
          q: kw,
          tagged});
+      const res_recent = await promisify(context.search.advanced)(
+        {...queryOptions,
+         filter: '!9Z(-x-Q)8', // includes total of questions
+         q: kw_recent,
+         tagged});
       data[spec].keywords[kw].type = type;
       data[spec].keywords[kw].total = res.total;
+      data[spec].keywords[kw].total_recent = res_recent.total;
       data[spec].keywords[kw].questions = res.items;
     }
   }

@@ -32,6 +32,11 @@ fetch("results.json").then(r => r.json())
           numberTd.textContent = results[spec].tags[tag].total;
           tagTr.appendChild(numberTd);
 
+          const numberRecentTd = document.createElement("td");
+          numberRecentTd.className = "number";
+          numberRecentTd.textContent = results[spec].tags[tag].total_recent;
+          tagTr.appendChild(numberRecentTd);
+
           const questionsTd = document.createElement("td");
           const details = document.createElement("details");
           const summary = document.createElement("summary");
@@ -99,7 +104,7 @@ fetch("results.json").then(r => r.json())
           }
           const kwTd = document.createElement("td");
           const kwLink = document.createElement("a");
-          kwLink.href="https://stackoverflow.com/search?q=" + encodeURIComponent(kw + (results[spec].keywords[kw].type ? ` [${results[spec].keywords[kw].type}]` : ''));
+          kwLink.href="https://stackoverflow.com/search?q=" + "is:question+" + encodeURIComponent(kw + (results[spec].keywords[kw].type ? ` [${results[spec].keywords[kw].type}]` : ''));
           kwLink.textContent = kw + (results[spec].keywords[kw].type ? ` [${results[spec].keywords[kw].type}]` : '');
           kwTd.appendChild(kwLink);
           kwTr.appendChild(kwTd);
@@ -108,6 +113,11 @@ fetch("results.json").then(r => r.json())
           numberTd.className = "number";
           numberTd.textContent = results[spec].keywords[kw].total;
           kwTr.appendChild(numberTd);
+
+          const numberRecentTd = document.createElement("td");
+          numberRecentTd.className = "number";
+          numberRecentTd.textContent = results[spec].keywords[kw].total_recent;
+          kwTr.appendChild(numberRecentTd);
 
           const questionsTd = document.createElement("td");
           const details = document.createElement("details");
