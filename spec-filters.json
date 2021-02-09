@@ -339,5 +339,83 @@
   },
   "https://www.khronos.org/registry/webgl/specs/latest/1.0/": {
     "tags": ["webgl"]
+  },
+  "https://drafts.css-houdini.org/css-paint-api/": {
+    "tags": ["css-paint-api"]
+  },
+  "https://drafts.fxtf.org/filter-effects/": {
+    "tags": ["css-filters"]
+  },
+  "https://drafts.fxtf.org/compositing/": {
+    "tags": ["mix-blend-mode", "background-blend-mode"]
+  },
+  "https://drafts.fxtf.org/css-masking/": {
+    "tags": ["clip-path", "css-mask"]
+  },
+  "https://drafts.fxtf.org/geometry/": {
+    "keywords": ["DOMMatrix", "DOMPoint", "DOMRect", "DOMRectList", "DOMQuad"]
+  },
+  "https://drafts.csswg.org/mediaqueries/": {
+    "tags": ["media-queries"]
+  },
+  "https://drafts.csswg.org/css-fonts/": {
+    "tags": ["webfonts", "font-face", "font-family", "font-size"]
+  },
+  "https://drafts.csswg.org/css-flexbox/": {
+    "tags": ["flexbox"]
+  },
+  "https://drafts.csswg.org/css-grid/": {
+    "tags": ["css-grid"]
+  },
+  "https://drafts.csswg.org/css-box/": {
+    "tags": ["css-float"]
+  },
+  "https://drafts.csswg.org/css-position/": {
+    "tags": ["css-position"]
+  },
+  "https://drafts.csswg.org/selectors/": {
+    "tags": ["css-selectors", "pseudo-class"]
+  },
+  "https://drafts.csswg.org/css-values/": {
+    "tags": ["css-calc"]
+  },
+  "https://drafts.csswg.org/css-variables/": {
+    "tags": ["css-variables"]
+  },
+  "https://drafts.csswg.org/css-animations/": {
+    "tags": ["css-animations"]
+  },
+  "https://drafts.csswg.org/css-transforms/": {
+    "tags": ["css-transforms"]
+  },
+  "https://drafts.csswg.org/css-transitions/": {
+    "tags": ["css-transitions"]
+  },
+  "https://drafts.csswg.org/css-shapes/": {
+    "tags": ["css-shapes"]
+  },
+  "https://drafts.csswg.org/css-tables/": {
+    "tags": ["css-tables"]
+  },
+  "https://drafts.csswg.org/css-multicol/": {
+    "tags": ["css-multicolumn-layout"]
+  },
+  "https://drafts.csswg.org/css-page/": {
+    "tags": ["css-paged-media"]
+  },
+  "https://drafts.csswg.org/css-pseudo/": {
+    "tags": ["pseudo-element"]
+  },
+  "https://drafts.csswg.org/css-pseudo/": {
+    "tags": ["pseudo-element"]
+  },
+  "https://drafts.csswg.org/css-lists/": {
+    "tags": ["css-counter"]
+  },
+  "https://drafts.csswg.org/css-cascade/": {
+    "tags": ["css-cascade"]
+  },
+  "https://drafts.csswg.org/cssom/": {
+    "tags": ["cssom"]
   }
 }
