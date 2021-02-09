@@ -42,7 +42,7 @@ fetch("results.json").then(r => r.json())
             const li = document.createElement("li");
             const a = document.createElement("a");
             a.href = q.link;
-            a.textContent = q.title;
+            a.textContent = (new Date() - q.creation_date*1000 < 7*24*3600*1000 ? "🆕 " : "") + q.title;
             li.appendChild(a);
             li.appendChild(document.createTextNode(q.is_answered ? " ✓" : " ✕"));
             questionsOl.appendChild(li);
