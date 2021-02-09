@@ -70,6 +70,9 @@ fetch("results.json").then(r => r.json())
           const hasGH = (spec.match(/github\.io/));
           const ghOrg = hasGH ? spec.match(/\/\/([^\.]*)\.github\.io/)[1] : '';
           if (results[spec].tags[tag].wiki && results[spec].tags[tag].wiki.body) {
+            const wikiLink = document.createElement("a");
+            wikiLink.href = "https://stackoverflow.com/tags/" + tag + "/info";
+            wikiLink.textContent = "wiki page for " + tag;
             const wikiDetails = document.createElement("details");
             const wikiSummary = document.createElement("summary");
             wikiAnalysisSummary({
@@ -79,6 +82,7 @@ fetch("results.json").then(r => r.json())
             }, wikiSummary);
             wikiDetails.innerHTML = results[spec].tags[tag].wiki.body;
             wikiDetails.prepend(wikiSummary);
+            wikiTd.appendChild(wikiLink);
             wikiTd.appendChild(wikiDetails);
           } else {
             wikiTd.textContent = "✕";
