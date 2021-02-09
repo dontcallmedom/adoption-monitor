@@ -245,7 +245,7 @@
     "keywords": ["navigator.permissions"]
   },
   "https://w3c.github.io/woff/woff2/": {
-    "tags": ["woff"]
+    "tags": ["woff", "woff2"]
   },
   "https://webassembly.github.io/spec/core/bikeshed/": {
     "tags": ["webassembly"]
