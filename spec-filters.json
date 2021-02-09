@@ -64,6 +64,9 @@
     "type": "javascript",
     "tags": ["filereader"]
   },
+  "https://w3c.github.io/IndexedDB/": {
+    "tags": ["indexeddb"]
+  },
   "https://w3c.github.io/input-events/": {
     "keywords": ["insertCompositionText", "insertFromComposition", "getTargetRanges", {"kw": "InputEvent", "tag": "javascript"}]
   },
