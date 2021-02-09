@@ -314,5 +314,14 @@
   },
   "https://browserext.github.io/browserext/": {
     "tags": ["browser-extension"]
+  },
+  "https://webbluetoothcg.github.io/web-bluetooth/": {
+    "tags": ["web-bluetooth"]
+  },
+  "https://w3c.github.io/web-nfc/": {
+    "tags": ["webnfc"]
+  },
+  "https://wicg.github.io/webusb/": {
+    "tags": ["webusb"]
   }
 }
