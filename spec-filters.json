@@ -329,5 +329,8 @@
   },
   "https://wicg.github.io/webusb/": {
     "tags": ["webusb"]
+  },
+  "https://w3c.github.io/setImmediate/": {
+    "tags": ["setimmediate"]
   }
 }
