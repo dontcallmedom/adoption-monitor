@@ -104,7 +104,7 @@
     "keywords": [{"tag": "html", "kw": ["link", "manifest"]}, "webmanifest", "beforeinstallprompt", "appinstalled"]
   },
   "https://w3c.github.io/wcag/guidelines/": {
-    "tags": ["wcag"]
+    "tags": ["wcag", "wcag2.0"]
   },
   "https://w3c.github.io/aria/": {
     "tags": ["wai-aria"]
