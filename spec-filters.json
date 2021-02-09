@@ -315,6 +315,9 @@
   "https://browserext.github.io/browserext/": {
     "tags": ["browser-extension"]
   },
+  "https://w3c.github.io/webcrypto/": {
+    "tags": ["webcrypto-api"]
+  },
   "https://webbluetoothcg.github.io/web-bluetooth/": {
     "tags": ["web-bluetooth"]
   },
