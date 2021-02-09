@@ -110,7 +110,8 @@
     "tags": ["wai-aria"]
   },
   "https://w3c.github.io/webdriver/": {
-    "tags": ["webdriver"]
+    "tags": ["webdriver", "selenium-webdriver"],
+    "keywords": ["webdriver", ["webdriver", "css-selectors"], ["webdriver", "xpath"]]
   },
   "https://w3c.github.io/sensors/": {
     "type": "javascript",
