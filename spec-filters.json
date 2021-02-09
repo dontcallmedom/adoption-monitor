@@ -65,13 +65,13 @@
     "tags": ["filereader"]
   },
   "https://w3c.github.io/input-events/": {
-    "keywords": ["insertCompositionText", "insertFromComposition", "getTargetRanges", {"kw": "InputEvent", "tag": "javascript"}]
+    "keywords": ["insertCompositionText", "insertFromComposition", "getTargetRanges", ["InputEvent", "[javascript]"]]
   },
   "https://w3c.github.io/pointerlock/": {
     "keywords": ["pointerlockchange", "pointerlockerror", "requestPointerLock"]
   },
   "https://w3c.github.io/selection-api/": {
-    "keywords": [{"tag": "javascript", "kw": "selectionstart"}, {"tag": "javascript", "kw": "selectionchange"}, {"tag": "javascript", "kw": "getSelection"}]
+    "keywords": [["[javascript]", "selectionstart"], ["[javascript]", "selectionchange"], ["[javascript]", "getSelection"]]
   },
   "https://w3c.github.io/uievents/": {
     "type": "javascript",
@@ -97,11 +97,11 @@
     "keywords": ["pushManager"]
   },
   "https://w3c.github.io/screen-orientation/": {
-    "keywords": [{"tag": "javascript", "kw": "screen.orientation"}, "screen.orientation.lock"]
+    "keywords": [["[javascript]", "screen.orientation"], "screen.orientation.lock"]
   },
   "https://w3c.github.io/manifest/": {
     "tags": [["manifest", "html"]],
-    "keywords": [{"tag": "html", "kw": ["link", "manifest"]}, "webmanifest", "beforeinstallprompt", "appinstalled"]
+    "keywords": [["[html]", "link", "manifest"], "webmanifest", "beforeinstallprompt", "appinstalled"]
   },
   "https://w3c.github.io/wcag/guidelines/": {
     "tags": ["wcag"]
