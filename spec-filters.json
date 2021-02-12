@@ -446,5 +446,8 @@
   },
   "https://html.spec.whatwg.org/#contenteditable": {
     "tags": ["contenteditable", "execcommand"]
+  },
+  "https://gpuweb.github.io/gpuweb/": {
+    "tags": ["webgpu"]
   }
 }

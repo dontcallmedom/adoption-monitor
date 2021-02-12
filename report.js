@@ -35,14 +35,15 @@ fetch("results.json").then(r => r.json())
           const questionsTd = document.createElement("td");
           const details = document.createElement("details");
           const summary = document.createElement("summary");
-          summary.textContent = "questions";
+          const recentCount = results[spec].tags[tag].questions.filter(q => q.creation_date > (new Date())/1000 -  7*24*3600).length;
+          summary.textContent = "questions" + (recentCount ?  " (" + recentCount  + " recent)" : "");
           details.appendChild(summary);
           const questionsOl = document.createElement("ol");
           results[spec].tags[tag].questions.slice(0, 10).forEach(q => {
             const li = document.createElement("li");
             const a = document.createElement("a");
             a.href = q.link;
-            a.textContent = q.title;
+            a.textContent = (new Date() - q.creation_date*1000 < 7*24*3600*1000 ? "🆕 " : "") + q.title;
             li.appendChild(a);
             li.appendChild(document.createTextNode(q.is_answered ? " ✓" : " ✕"));
             questionsOl.appendChild(li);
@@ -69,6 +70,9 @@ fetch("results.json").then(r => r.json())
           const hasGH = (spec.match(/github\.io/));
           const ghOrg = hasGH ? spec.match(/\/\/([^\.]*)\.github\.io/)[1] : '';
           if (results[spec].tags[tag].wiki && results[spec].tags[tag].wiki.body) {
+            const wikiLink = document.createElement("a");
+            wikiLink.href = "https://stackoverflow.com/tags/" + tag + "/info";
+            wikiLink.textContent = "wiki page for " + tag;
             const wikiDetails = document.createElement("details");
             const wikiSummary = document.createElement("summary");
             wikiAnalysisSummary({
@@ -78,6 +82,7 @@ fetch("results.json").then(r => r.json())
             }, wikiSummary);
             wikiDetails.innerHTML = results[spec].tags[tag].wiki.body;
             wikiDetails.prepend(wikiSummary);
+            wikiTd.appendChild(wikiLink);
             wikiTd.appendChild(wikiDetails);
           } else {
             wikiTd.textContent = "✕";
@@ -112,20 +117,23 @@ fetch("results.json").then(r => r.json())
           const questionsTd = document.createElement("td");
           const details = document.createElement("details");
           const summary = document.createElement("summary");
-          summary.textContent = "questions";
+          const recentCount = results[spec].keywords[kw].questions.filter(q => q.creation_date > (new Date())/1000 -  7*24*3600).length;
+          summary.textContent = "questions" + (recentCount ?  " (" + recentCount  + " recent)" : "");
           details.appendChild(summary);
           const questionsOl = document.createElement("ol");
           results[spec].keywords[kw].questions.slice(0, 10).forEach(q => {
             const li = document.createElement("li");
             const a = document.createElement("a");
             a.href = q.link;
-            a.textContent = q.title;
+            a.textContent = (new Date() - q.creation_date*1000 < 7*24*3600*1000 ? "🆕 " : "") + q.title;
             li.appendChild(a);
             li.appendChild(document.createTextNode(q.is_answered ? " ✓" : " ✕"));
             questionsOl.appendChild(li);
           });
           details.appendChild(questionsOl);
-          questionsTd.appendChild(details);
+          if (results[spec].keywords[kw].total) {
+            questionsTd.appendChild(details);
+          }
           kwTr.appendChild(questionsTd);
           if (firstRow) {
             firstRow = false;
