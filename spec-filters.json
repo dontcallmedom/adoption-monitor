@@ -305,5 +305,8 @@
   },
   "https://browserext.github.io/browserext/": {
     "tags": ["browser-extension"]
+  },
+  "https://gpuweb.github.io/gpuweb/": {
+    "tags": ["webgpu"]
   }
 }
