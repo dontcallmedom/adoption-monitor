@@ -1,0 +1,42 @@
+{
+  "browserext": {
+    "repo": "browserext/browserext",
+    "group": "Browser Extension CG"
+  },
+  "WCAG": {
+    "repo": "w3c/wcag"
+  },
+  "mathml-core": {
+    "group": "MathML Refresh Community Group"
+  },
+  "html": {
+    "group": "WHATWG"
+  },
+  "fetch": {
+    "group": "WHATWG"
+  },
+  "xhr": {
+    "group": "WHATWG"
+  },
+  "notifications": {
+    "group": "WHATWG"
+  },
+  "streams": {
+    "group": "WHATWG"
+  },
+  "dom": {
+    "group": "WHATWG"
+  },
+  "ttml": {
+    "repo": "w3c/ttml2"
+  },
+  "WebCryptoAPI": {
+    "group": "maintenance@w3c"
+  },
+  "web-bluetooth": {
+    "group": "Web Bluetooth CG"
+  },
+  "webgl1": {
+    "group": "Khronos WebGL WG"
+  }
+}

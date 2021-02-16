@@ -1,0 +1,657 @@
+{
+  "mediacapture-streams": {
+    "title": "Media Capture and Streams",
+    "url": "https://w3c.github.io/mediacapture-main/",
+    "group": "Web Real-Time Communications Working Group"
+  },
+  "screen-capture": {
+    "title": "Screen Capture",
+    "url": "https://w3c.github.io/mediacapture-screen-share/",
+    "group": "Web Real-Time Communications Working Group"
+  },
+  "mediastream-recording": {
+    "title": "MediaStream Recording",
+    "url": "https://w3c.github.io/mediacapture-record/",
+    "group": "Web Real-Time Communications Working Group"
+  },
+  "webrtc": {
+    "title": "WebRTC 1.0",
+    "url": "https://w3c.github.io/webrtc-pc/",
+    "group": "Web Real-Time Communications Working Group"
+  },
+  "webrtc-stats": {
+    "title": "WebRTC Statistics",
+    "url": "https://w3c.github.io/webrtc-stats/",
+    "group": "Web Real-Time Communications Working Group"
+  },
+  "webrtc-svc": {
+    "title": "SVC",
+    "url": "https://w3c.github.io/webrtc-svc/",
+    "group": "Web Real-Time Communications Working Group"
+  },
+  "audio-output": {
+    "title": "Audio Output Devices API",
+    "url": "https://w3c.github.io/mediacapture-output/",
+    "group": "Web Real-Time Communications Working Group"
+  },
+  "mediacapture-fromelement": {
+    "title": "Media Capture from DOM Elements",
+    "url": "https://w3c.github.io/mediacapture-fromelement/",
+    "group": "Web Real-Time Communications Working Group"
+  },
+  "webaudio": {
+    "title": "Web Audio API",
+    "url": "https://webaudio.github.io/web-audio-api/",
+    "group": "Audio Working Group"
+  },
+  "webmidi": {
+    "title": "Web MIDI API",
+    "url": "https://webaudio.github.io/web-midi-api/",
+    "group": "Audio Working Group"
+  },
+  "webxr": {
+    "title": "WebXR Device API",
+    "url": "https://immersive-web.github.io/webxr/",
+    "group": "Immersive Web Working Group"
+  },
+  "service-workers": {
+    "title": "Service Workers 1",
+    "url": "https://w3c.github.io/ServiceWorker/",
+    "group": "Service Workers Working Group"
+  },
+  "payment-request": {
+    "title": "Payment Request API",
+    "url": "https://w3c.github.io/payment-request/",
+    "group": "Web Payments Working Group"
+  },
+  "payment-handler": {
+    "title": "Payment Handler API",
+    "url": "https://w3c.github.io/payment-handler/",
+    "group": "Web Payments Working Group"
+  },
+  "payment-method-manifest": {
+    "title": "Payment Method Manifest",
+    "url": "https://w3c.github.io/payment-method-manifest/",
+    "group": "Web Payments Working Group"
+  },
+  "webauthn": {
+    "title": "Web Authentication",
+    "url": "https://w3c.github.io/webauthn/",
+    "group": "Web Authentication Working Group"
+  },
+  "did-core": {
+    "title": "did-core",
+    "url": "https://www.w3.org/TR/did-core",
+    "group": "Decentralized Identifier Working Group"
+  },
+  "FileAPI": {
+    "title": "File API",
+    "url": "https://w3c.github.io/FileAPI/",
+    "group": "Web Applications Working Group"
+  },
+  "IndexedDB": {
+    "title": "Indexed DB 2.0",
+    "url": "https://w3c.github.io/IndexedDB/",
+    "group": "Web Applications Working Group"
+  },
+  "input-events": {
+    "title": "Input Events 2",
+    "url": "https://w3c.github.io/input-events/",
+    "group": "Web Applications Working Group"
+  },
+  "pointerlock": {
+    "title": "Pointer Lock 2.0",
+    "url": "https://w3c.github.io/pointerlock/",
+    "group": "Web Applications Working Group"
+  },
+  "selection-api": {
+    "title": "Selection API",
+    "url": "https://w3c.github.io/selection-api/",
+    "group": "Web Applications Working Group"
+  },
+  "uievents": {
+    "title": "UI Events",
+    "url": "https://w3c.github.io/uievents/",
+    "group": "Web Applications Working Group"
+  },
+  "web-share": {
+    "title": "Web Share API",
+    "url": "https://w3c.github.io/web-share/",
+    "group": "Web Applications Working Group"
+  },
+  "clipboard-apis": {
+    "title": "Clipboard API and events",
+    "url": "https://w3c.github.io/clipboard-apis/",
+    "group": "Web Applications Working Group"
+  },
+  "gamepad": {
+    "title": "Gamepad",
+    "url": "https://w3c.github.io/gamepad/",
+    "group": "Web Applications Working Group"
+  },
+  "intersection-observer": {
+    "title": "Intersection Observer",
+    "url": "https://w3c.github.io/IntersectionObserver/",
+    "group": "Web Applications Working Group"
+  },
+  "push-api": {
+    "title": "Push API",
+    "url": "https://w3c.github.io/push-api/",
+    "group": "Web Applications Working Group"
+  },
+  "screen-orientation": {
+    "title": "The Screen Orientation API",
+    "url": "https://w3c.github.io/screen-orientation/",
+    "group": "Web Applications Working Group"
+  },
+  "appmanifest": {
+    "title": "Web App Manifest",
+    "url": "https://w3c.github.io/manifest/",
+    "group": "Web Applications Working Group"
+  },
+  "WCAG": {
+    "title": "WCAG",
+    "url": "https://www.w3.org/TR/WCAG",
+    "group": "Accessibility Guidelines Working Group"
+  },
+  "wai-aria": {
+    "title": "WAI-ARIA 1.2",
+    "url": "https://w3c.github.io/aria/",
+    "group": "Accessible Rich Internet Applications Working Group"
+  },
+  "webdriver": {
+    "title": "WebDriver 2",
+    "url": "https://w3c.github.io/webdriver/",
+    "group": "Browser Testing and Tools Working Group"
+  },
+  "generic-sensor": {
+    "title": "Generic Sensor API",
+    "url": "https://w3c.github.io/sensors/",
+    "group": "Devices and Sensors Working Group"
+  },
+  "orientation-event": {
+    "title": "DeviceOrientation Event",
+    "url": "https://w3c.github.io/deviceorientation/",
+    "group": "Devices and Sensors Working Group"
+  },
+  "accelerometer": {
+    "title": "Accelerometer",
+    "url": "https://w3c.github.io/accelerometer/",
+    "group": "Devices and Sensors Working Group"
+  },
+  "magnetometer": {
+    "title": "Magnetometer",
+    "url": "https://w3c.github.io/magnetometer/",
+    "group": "Devices and Sensors Working Group"
+  },
+  "orientation-sensor": {
+    "title": "Orientation Sensor",
+    "url": "https://w3c.github.io/orientation-sensor/",
+    "group": "Devices and Sensors Working Group"
+  },
+  "ambient-light": {
+    "title": "Ambient Light Sensor",
+    "url": "https://w3c.github.io/ambient-light/",
+    "group": "Devices and Sensors Working Group"
+  },
+  "proximity": {
+    "title": "Proximity Sensor",
+    "url": "https://w3c.github.io/proximity/",
+    "group": "Devices and Sensors Working Group"
+  },
+  "geolocation-sensor": {
+    "title": "Geolocation Sensor",
+    "url": "https://w3c.github.io/geolocation-sensor/",
+    "group": "Devices and Sensors Working Group"
+  },
+  "battery-status": {
+    "title": "Battery Status API",
+    "url": "https://w3c.github.io/battery/",
+    "group": "Devices and Sensors Working Group"
+  },
+  "screen-wake-lock": {
+    "title": "Screen Wake Lock API",
+    "url": "https://w3c.github.io/screen-wake-lock/",
+    "group": "Devices and Sensors Working Group"
+  },
+  "geolocation-API": {
+    "title": "Geolocation API Specification 2nd Edition",
+    "url": "https://w3c.github.io/geolocation-api/",
+    "group": "Devices and Sensors Working Group"
+  },
+  "vibration": {
+    "title": "Vibration API",
+    "url": "https://w3c.github.io/vibration/",
+    "group": "Devices and Sensors Working Group"
+  },
+  "trace-context": {
+    "title": "Trace Context 1",
+    "url": "https://w3c.github.io/trace-context/",
+    "group": "Distributed Tracing Working Group"
+  },
+  "json-ld-syntax": {
+    "title": "json-ld-syntax",
+    "url": "https://www.w3.org/TR/json-ld-syntax",
+    "group": "JSON-LD Working Group"
+  },
+  "encrypted-media": {
+    "title": "Encrypted Media Extensions",
+    "url": "https://w3c.github.io/encrypted-media/",
+    "group": "Media Working Group"
+  },
+  "media-source": {
+    "title": "Media Source Extensions™",
+    "url": "https://w3c.github.io/media-source/",
+    "group": "Media Working Group"
+  },
+  "picture-in-picture": {
+    "title": "Picture-in-Picture",
+    "url": "https://w3c.github.io/picture-in-picture/",
+    "group": "Media Working Group"
+  },
+  "media-capabilities": {
+    "title": "Media Capabilities",
+    "url": "https://w3c.github.io/media-capabilities/",
+    "group": "Media Working Group"
+  },
+  "media-playback-quality": {
+    "title": "Media Playback Quality",
+    "url": "https://w3c.github.io/media-playback-quality/",
+    "group": "Media Working Group"
+  },
+  "mediasession": {
+    "title": "Media Session",
+    "url": "https://w3c.github.io/mediasession/",
+    "group": "Media Working Group"
+  },
+  "pointerevents": {
+    "title": "Pointer Events 3",
+    "url": "https://w3c.github.io/pointerevents/",
+    "group": "Pointer Events Working Group"
+  },
+  "presentation-api": {
+    "title": "Presentation API",
+    "url": "https://w3c.github.io/presentation-api/",
+    "group": "Second Screen Working Group"
+  },
+  "remote-playback": {
+    "title": "Remote Playback API",
+    "url": "https://w3c.github.io/remote-playback/",
+    "group": "Second Screen Working Group"
+  },
+  "mathml-core": {
+    "title": "MathML Core",
+    "url": "https://mathml-refresh.github.io/mathml-core/",
+    "group": "MathML Refresh Community Group"
+  },
+  "SVG": {
+    "title": "SVG 2",
+    "url": "https://svgwg.org/svg2-draft/",
+    "group": "SVG Working Group"
+  },
+  "webvtt": {
+    "title": "WebVTT: The Web Video Text Tracks Format",
+    "url": "https://w3c.github.io/webvtt/",
+    "group": "Timed Text Working Group"
+  },
+  "ttml": {
+    "title": "ttml",
+    "url": "https://www.w3.org/TR/ttml",
+    "group": "Timed Text Working Group"
+  },
+  "vc-data-model": {
+    "title": "vc-data-model",
+    "url": "https://www.w3.org/TR/vc-data-model",
+    "group": "Verifiable Credentials Working Group"
+  },
+  "CSP": {
+    "title": "Content Security Policy 3",
+    "url": "https://w3c.github.io/webappsec-csp/",
+    "group": "Web Application Security Working Group"
+  },
+  "SRI": {
+    "title": "SRI",
+    "url": "https://w3c.github.io/webappsec-subresource-integrity/",
+    "group": "Web Application Security Working Group"
+  },
+  "mixed-content": {
+    "title": "Mixed Content",
+    "url": "https://w3c.github.io/webappsec-mixed-content/",
+    "group": "Web Application Security Working Group"
+  },
+  "secure-contexts": {
+    "title": "Secure Contexts",
+    "url": "https://w3c.github.io/webappsec-secure-contexts/",
+    "group": "Web Application Security Working Group"
+  },
+  "upgrade-insecure-requests": {
+    "title": "Upgrade Insecure Requests",
+    "url": "https://w3c.github.io/webappsec-upgrade-insecure-requests/",
+    "group": "Web Application Security Working Group"
+  },
+  "credential-management": {
+    "title": "Credential Management 1",
+    "url": "https://w3c.github.io/webappsec-credential-management/",
+    "group": "Web Application Security Working Group"
+  },
+  "clear-site-data": {
+    "title": "Clear Site Data",
+    "url": "https://w3c.github.io/webappsec-clear-site-data/",
+    "group": "Web Application Security Working Group"
+  },
+  "referrer-policy": {
+    "title": "Referrer Policy",
+    "url": "https://w3c.github.io/webappsec-referrer-policy/",
+    "group": "Web Application Security Working Group"
+  },
+  "permissions": {
+    "title": "Permissions",
+    "url": "https://w3c.github.io/permissions/",
+    "group": "Web Application Security Working Group"
+  },
+  "WOFF": {
+    "title": "WOFF 2.0",
+    "url": "https://w3c.github.io/woff/woff2/",
+    "group": "Web Fonts Working Group"
+  },
+  "wasm-core": {
+    "title": "WebAssembly Core",
+    "url": "https://webassembly.github.io/spec/core/bikeshed/",
+    "group": "WebAssembly Community Group"
+  },
+  "wasm-web-api": {
+    "title": "WebAssembly Web API",
+    "url": "https://webassembly.github.io/spec/web-api/",
+    "group": "WebAssembly Community Group"
+  },
+  "wasm-js-api": {
+    "title": "WebAssembly JavaScript Interface",
+    "url": "https://webassembly.github.io/spec/js-api/",
+    "group": "WebAssembly Community Group"
+  },
+  "longtasks": {
+    "title": "Long Tasks API 1",
+    "url": "https://w3c.github.io/longtasks/",
+    "group": "Web Performance Working Group"
+  },
+  "paint-timing": {
+    "title": "Paint Timing 1",
+    "url": "https://w3c.github.io/paint-timing/",
+    "group": "Web Performance Working Group"
+  },
+  "page-visibility": {
+    "title": "Page Visibility 2",
+    "url": "https://w3c.github.io/page-visibility/",
+    "group": "Web Performance Working Group"
+  },
+  "requestidlecallback": {
+    "title": "Cooperative Scheduling of Background Tasks",
+    "url": "https://w3c.github.io/requestidlecallback/",
+    "group": "Web Performance Working Group"
+  },
+  "frame-timing": {
+    "title": "Frame Timing",
+    "url": "https://wicg.github.io/frame-timing/",
+    "group": "Web Platform Incubator Community Group"
+  },
+  "network-error-logging": {
+    "title": "Network Error Logging",
+    "url": "https://w3c.github.io/network-error-logging/",
+    "group": "Web Performance Working Group"
+  },
+  "beacon": {
+    "title": "Beacon",
+    "url": "https://w3c.github.io/beacon/",
+    "group": "Web Performance Working Group"
+  },
+  "resource-timing": {
+    "title": "Resource Timing 2",
+    "url": "https://w3c.github.io/resource-timing/",
+    "group": "Web Performance Working Group"
+  },
+  "device-memory": {
+    "title": "Device Memory",
+    "url": "https://w3c.github.io/device-memory/",
+    "group": "Web Performance Working Group"
+  },
+  "user-timing": {
+    "title": "User Timing 2",
+    "url": "https://w3c.github.io/user-timing/",
+    "group": "Web Performance Working Group"
+  },
+  "reporting": {
+    "title": "Reporting API",
+    "url": "https://w3c.github.io/reporting/",
+    "group": "Web Performance Working Group"
+  },
+  "preload": {
+    "title": "Preload",
+    "url": "https://w3c.github.io/preload/",
+    "group": "Web Performance Working Group"
+  },
+  "server-timing": {
+    "title": "Server Timing",
+    "url": "https://w3c.github.io/server-timing/",
+    "group": "Web Performance Working Group"
+  },
+  "resource-hints": {
+    "title": "Resource Hints",
+    "url": "https://w3c.github.io/resource-hints/",
+    "group": "Web Performance Working Group"
+  },
+  "hr-time": {
+    "title": "High Resolution Time",
+    "url": "https://w3c.github.io/hr-time/",
+    "group": "Web Performance Working Group"
+  },
+  "performance-timeline": {
+    "title": "Performance Timeline 2",
+    "url": "https://w3c.github.io/performance-timeline/",
+    "group": "Web Performance Working Group"
+  },
+  "navigation-timing": {
+    "title": "Navigation Timing 2",
+    "url": "https://w3c.github.io/navigation-timing/",
+    "group": "Web Performance Working Group"
+  },
+  "speech-api": {
+    "title": "Web Speech API",
+    "url": "https://wicg.github.io/speech-api/",
+    "group": "Web Platform Incubator Community Group"
+  },
+  "browserext": {
+    "title": "browserext",
+    "url": "https://www.w3.org/TR/browserext",
+    "group": "Browser Extension CG"
+  },
+  "WebCryptoAPI": {
+    "title": "Web Cryptography API",
+    "url": "https://w3c.github.io/webcrypto/",
+    "group": "maintenance@w3c"
+  },
+  "web-bluetooth": {
+    "title": "Web Bluetooth",
+    "url": "https://webbluetoothcg.github.io/web-bluetooth/",
+    "group": "Web Bluetooth CG"
+  },
+  "web-nfc": {
+    "title": "Web NFC API",
+    "url": "https://w3c.github.io/web-nfc/",
+    "group": "Web NFC Community Group"
+  },
+  "webusb": {
+    "title": "WebUSB API",
+    "url": "https://wicg.github.io/webusb/",
+    "group": "Web Platform Incubator Community Group"
+  },
+  "background-sync": {
+    "title": "Background Sync",
+    "url": "https://wicg.github.io/background-sync/spec/",
+    "group": "Web Platform Incubator Community Group"
+  },
+  "webgl1": {
+    "title": "WebGL",
+    "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+    "group": "Khronos WebGL WG"
+  },
+  "css-paint-api": {
+    "title": "CSS Painting API 1",
+    "url": "https://drafts.css-houdini.org/css-paint-api-1/",
+    "group": "Cascading Style Sheets (CSS) Working Group"
+  },
+  "filter-effects": {
+    "title": "Filter Effects 2",
+    "url": "https://drafts.fxtf.org/filter-effects-2/",
+    "group": "Cascading Style Sheets (CSS) Working Group"
+  },
+  "compositing": {
+    "title": "Compositing 2",
+    "url": "https://drafts.fxtf.org/compositing-2/",
+    "group": "Cascading Style Sheets (CSS) Working Group"
+  },
+  "css-masking": {
+    "title": "CSS Masking 1",
+    "url": "https://drafts.fxtf.org/css-masking-1/",
+    "group": "Cascading Style Sheets (CSS) Working Group"
+  },
+  "geometry": {
+    "title": "Geometry Interfaces 1",
+    "url": "https://drafts.fxtf.org/geometry/",
+    "group": "Cascading Style Sheets (CSS) Working Group"
+  },
+  "mediaqueries": {
+    "title": "Media Queries 4",
+    "url": "https://drafts.csswg.org/mediaqueries-4/",
+    "group": "Cascading Style Sheets (CSS) Working Group"
+  },
+  "css-fonts": {
+    "title": "CSS Fonts 4",
+    "url": "https://drafts.csswg.org/css-fonts-4/",
+    "group": "Cascading Style Sheets (CSS) Working Group"
+  },
+  "css-flexbox": {
+    "title": "CSS Flexbox 1",
+    "url": "https://drafts.csswg.org/css-flexbox-1/",
+    "group": "Cascading Style Sheets (CSS) Working Group"
+  },
+  "css-grid": {
+    "title": "CSS Grid Layout 3",
+    "url": "https://drafts.csswg.org/css-grid-3/",
+    "group": "Cascading Style Sheets (CSS) Working Group"
+  },
+  "css-box": {
+    "title": "CSS Box Model 3",
+    "url": "https://drafts.csswg.org/css-box-3/",
+    "group": "Cascading Style Sheets (CSS) Working Group"
+  },
+  "css-position": {
+    "title": "CSS Positioned Layout 3",
+    "url": "https://drafts.csswg.org/css-position/",
+    "group": "Cascading Style Sheets (CSS) Working Group"
+  },
+  "selectors": {
+    "title": "Selectors 4",
+    "url": "https://drafts.csswg.org/selectors/",
+    "group": "Cascading Style Sheets (CSS) Working Group"
+  },
+  "css-values": {
+    "title": "CSS Values 3",
+    "url": "https://drafts.csswg.org/css-values-3/",
+    "group": "Cascading Style Sheets (CSS) Working Group"
+  },
+  "css-variables": {
+    "title": "CSS Variables 1",
+    "url": "https://drafts.csswg.org/css-variables/",
+    "group": "Cascading Style Sheets (CSS) Working Group"
+  },
+  "css-animations": {
+    "title": "CSS Animations 2",
+    "url": "https://drafts.csswg.org/css-animations-2/",
+    "group": "Cascading Style Sheets (CSS) Working Group"
+  },
+  "css-transforms": {
+    "title": "CSS Transforms 1",
+    "url": "https://drafts.csswg.org/css-transforms/",
+    "group": "Cascading Style Sheets (CSS) Working Group"
+  },
+  "css-transitions": {
+    "title": "CSS Transitions 2",
+    "url": "https://drafts.csswg.org/css-transitions-2/",
+    "group": "Cascading Style Sheets (CSS) Working Group"
+  },
+  "css-shapes": {
+    "title": "CSS Shapes 2",
+    "url": "https://drafts.csswg.org/css-shapes-2/",
+    "group": "Cascading Style Sheets (CSS) Working Group"
+  },
+  "css-tables": {
+    "title": "CSS Table 3",
+    "url": "https://drafts.csswg.org/css-tables-3/",
+    "group": "Cascading Style Sheets (CSS) Working Group"
+  },
+  "css-multicol": {
+    "title": "CSS Multicol 2",
+    "url": "https://drafts.csswg.org/css-multicol-2/",
+    "group": "Cascading Style Sheets (CSS) Working Group"
+  },
+  "css-page": {
+    "title": "Proposals for the future of CSS Paged Media",
+    "url": "https://drafts.csswg.org/css-page-4/",
+    "group": "Cascading Style Sheets (CSS) Working Group"
+  },
+  "css-pseudo": {
+    "title": "CSS Pseudo-Elements 4",
+    "url": "https://drafts.csswg.org/css-pseudo-4/",
+    "group": "Cascading Style Sheets (CSS) Working Group"
+  },
+  "css-lists": {
+    "title": "CSS Lists 3",
+    "url": "https://drafts.csswg.org/css-lists-3/",
+    "group": "Cascading Style Sheets (CSS) Working Group"
+  },
+  "css-cascade": {
+    "title": "CSS Cascading 3",
+    "url": "https://drafts.csswg.org/css-cascade-3/",
+    "group": "Cascading Style Sheets (CSS) Working Group"
+  },
+  "cssom": {
+    "title": "CSSOM",
+    "url": "https://drafts.csswg.org/cssom/",
+    "group": "Cascading Style Sheets (CSS) Working Group"
+  },
+  "dom": {
+    "title": "DOM",
+    "url": "https://dom.spec.whatwg.org/",
+    "group": "WHATWG"
+  },
+  "fetch": {
+    "title": "Fetch",
+    "url": "https://fetch.spec.whatwg.org/",
+    "group": "WHATWG"
+  },
+  "xhr": {
+    "title": "XMLHttpRequest",
+    "url": "https://xhr.spec.whatwg.org/",
+    "group": "WHATWG"
+  },
+  "notifications": {
+    "title": "Notifications API",
+    "url": "https://notifications.spec.whatwg.org/",
+    "group": "WHATWG"
+  },
+  "streams": {
+    "title": "Streams",
+    "url": "https://streams.spec.whatwg.org/",
+    "group": "WHATWG"
+  },
+  "html": {
+    "title": "HTML",
+    "url": "https://html.spec.whatwg.org/multipage/",
+    "group": "WHATWG"
+  },
+  "gpuweb": {
+    "title": "WebGPU",
+    "url": "https://gpuweb.github.io/gpuweb/",
+    "group": "GPU for the Web Community Group"
+  }
+}

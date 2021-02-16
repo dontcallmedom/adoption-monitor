@@ -6,6 +6,8 @@ const context = new stackexchange({ version: 2.2 });
 
 const config = require("./config.json");
 
+const specData = require("./spec-data.json");
+
 // Group tags by WG? by specs?
 
 // TODO: doesn't cover CSS specs at the moment
@@ -25,7 +27,13 @@ const data = {};
 
 async function collectData() {
   for (let spec of Object.keys(stackoverflow_filters)) {
+    if (specData[spec]) {
+      data[spec]
+    }
     data[spec] = {tags:{}, keywords: {}};
+    if (specData[spec]) {
+      data[spec] = Object.assign(data[spec], specData[spec]);
+    }
     const tags = stackoverflow_filters[spec].tags || [];
     let type = stackoverflow_filters[spec].type;
     for (let tag of tags) {
