@@ -341,6 +341,9 @@
     ]
   },
   "trace-context": {
+    "tags": [
+      "distributed-tracing"
+    ],
     "keywords": [
       "traceparent",
       "tracestate"
