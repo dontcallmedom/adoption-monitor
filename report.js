@@ -2,16 +2,27 @@ const tbody = document.querySelector("tbody");
 
 fetch("results.json").then(r => r.json())
   .then(results => {
-    Object.keys(results).forEach(spec => {
+    Object.keys(results)
+      .sort((a,b) => 
+            (results[a].group || "unknown").localeCompare(results[b].group)
+           )
+      .forEach(spec => {
       const tr = document.createElement("tr");
-      const specTd = document.createElement("th");
+        const specTd = document.createElement("th");
+        const rowspan = (Object.keys(results[spec].tags).length + Object.keys(results[spec].keywords).length) || 1;
       specTd.setAttribute("scope", "row");
-      specTd.setAttribute("rowspan", (Object.keys(results[spec].tags).length + Object.keys(results[spec].keywords).length) || 1);
-      const a = document.createElement("a");
-      a.href = spec;
-      a.textContent = spec;
+      specTd.setAttribute("rowspan", rowspan);
+        const a = document.createElement("a");
+        if (results[spec].url) {
+          a.href = results[spec].url;
+        }
+      a.textContent = results[spec].title || spec;
       specTd.appendChild(a);
-      tr.appendChild(specTd);
+        tr.appendChild(specTd);
+        const groupTd = document.createElement("td");
+        groupTd.setAttribute("rowspan", rowspan);
+        groupTd.textContent = results[spec].group || "unknown";
+        tr.appendChild(groupTd);
       tbody.appendChild(tr);
       let firstRow = true;
       if (Object.keys(results[spec].tags).length) {
