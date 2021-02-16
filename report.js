@@ -17,7 +17,10 @@ fetch("results.json").then(r => r.json())
           a.href = results[spec].url;
         }
       a.textContent = results[spec].title || spec;
-      specTd.appendChild(a);
+        specTd.appendChild(a);
+        if (results[spec].profile) {
+          specTd.appendChild(document.createTextNode(" (" + results[spec].profile + ")"));
+        }
         tr.appendChild(specTd);
         const groupTd = document.createElement("td");
         groupTd.setAttribute("rowspan", rowspan);

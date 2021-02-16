@@ -27,12 +27,10 @@ const data = {};
 
 async function collectData() {
   for (let spec of Object.keys(stackoverflow_filters)) {
-    if (specData[spec]) {
-      data[spec]
-    }
-    data[spec] = {tags:{}, keywords: {}};
-    if (specData[spec]) {
-      data[spec] = Object.assign(data[spec], specData[spec]);
+    const [shortname, profile] = spec.split(":");
+    data[spec] = {tags:{}, keywords: {}, profile};
+    if (specData[shortname]) {
+      data[spec] = Object.assign(data[spec], specData[shortname]);
     }
     const tags = stackoverflow_filters[spec].tags || [];
     let type = stackoverflow_filters[spec].type;

@@ -884,47 +884,47 @@
       "ReadableStream"
     ]
   },
-  "html": {
-    "features": [
-      {"name": "generic",
-       "tags": [
-         "websocket",
-         "server-sent-events",
-         "eventsource",
-         "local-storage",
-         "web-worker",
-         "html5-video",
-         "html5-audio",
-         "html5-history",
-         "html5-appcache",
-         "html-parsing",
-         "xhtml",
-         "lazy-loading",
-         "multipartform-data",
-         "multipart",
-         "meta-tags"
+  "html:generic": {
+    "subset": "generic",
+    "tags": [
+      "websocket",
+      "server-sent-events",
+      "eventsource",
+      "local-storage",
+      "web-worker",
+      "html5-video",
+      "html5-audio",
+      "html5-history",
+      "html5-appcache",
+      "html-parsing",
+      "xhtml",
+      "lazy-loading",
+      "multipartform-data",
+      "multipart",
+      "meta-tags"
        ]
-      },
-      {"name": "canvas",
-       "tags": [
-         "html5-canvas",
-         "canvas"
-       ]
-      },
-      {"name": "custom-elements",
-       "tags": [
-         "custom-element",
-         "web-component",
-         "html5-template",
-         "html-imports"
-       ]
-      },
-      {"name": "content-editable",
-       "tags": [
-         "contenteditable",
-         "execcommand"
-       ]
-      }
+  },
+  "html:canvas": {
+    "subset": "canvas",
+    "tags": [
+      "html5-canvas",
+      "canvas"
+    ]
+  },
+  "html:custom-elements": {
+    "subset": "custom-elements",
+    "tags": [
+      "custom-element",
+      "web-component",
+      "html5-template",
+      "html-imports"
+    ]
+  },
+  "html:content-editable": {
+    "subset": "content-editable",
+    "tags": [
+      "contenteditable",
+      "execcommand"
     ]
   },
   "gpuweb": {
