@@ -1,454 +1,932 @@
 {
-  "https://w3c.github.io/mediacapture-main/": {
+  "mediacapture-streams": {
     "type": "javascript",
-    "tags": ["mediadevices", "getusermedia", "mediastream"]
+    "tags": [
+      "mediadevices",
+      "getusermedia",
+      "mediastream"
+    ]
   },
-  "https://w3c.github.io/mediacapture-screen-share/": {
+  "screen-capture": {
     "type": "javascript",
-    "tags": ["get-display-media", "screen-capture", "screensharing"]
+    "tags": [
+      "get-display-media",
+      "screen-capture",
+      "screensharing"
+    ]
   },
-  "https://w3c.github.io/mediacapture-record/": {
+  "mediastream-recording": {
     "type": "javascript",
-    "tags": ["web-mediarecorder"]
+    "tags": [
+      "web-mediarecorder"
+    ]
   },
-  "https://w3c.github.io/webrtc-pc/": {
+  "webrtc": {
     "type": "javascript",
-    "tags": ["webrtc", "rtcdatachannel", "rtcpeerconnection"]
+    "tags": [
+      "webrtc",
+      "rtcdatachannel",
+      "rtcpeerconnection"
+    ]
   },
-  "https://w3c.github.io/webrtc-stats/": {
+  "webrtc-stats": {
     "type": "webrtc",
-    "tags": ["statistics"],
-    "keywords": ["getStat", "getStats"]
+    "tags": [
+      "statistics"
+    ],
+    "keywords": [
+      "getStat",
+      "getStats"
+    ]
   },
-  "https://w3c.github.io/webrtc-svc/": {
+  "webrtc-svc": {
     "type": "webrtc",
-    "tags": ["svc"]
+    "tags": [
+      "svc"
+    ]
   },
-  "https://w3c.github.io/mediacapture-output/": {
-    "keywords": ["setSinkId"]
+  "audio-output": {
+    "keywords": [
+      "setSinkId"
+    ]
   },
-  "https://w3c.github.io/mediacapture-fromelement/": {
+  "mediacapture-fromelement": {
     "type": "javascript",
-    "keywords": ["captureStream", "requestFrame"]
+    "keywords": [
+      "captureStream",
+      "requestFrame"
+    ]
   },
-  "https://webaudio.github.io/web-audio-api/": {
+  "webaudio": {
     "type": "javascript",
-    "tags": ["web-audio-api", "audiocontext"]
+    "tags": [
+      "web-audio-api",
+      "audiocontext"
+    ]
   },
-  "https://webaudio.github.io/web-midi-api/": {
-    "tags": ["web-midi"]
+  "webmidi": {
+    "tags": [
+      "web-midi"
+    ]
   },
-  "https://immersive-web.github.io/webxr/": {
-    "tags": ["webxr"]
+  "webxr": {
+    "tags": [
+      "webxr"
+    ]
   },
-  "https://w3c.github.io/ServiceWorker/v1/": {
-    "tags": ["service-worker"]
+  "service-workers": {
+    "tags": [
+      "service-worker"
+    ]
   },
-  "https://w3c.github.io/payment-request/": {
-    "tags": ["payment-request-api"]
+  "payment-request": {
+    "tags": [
+      "payment-request-api"
+    ]
   },
-  "https://w3c.github.io/payment-handler/": {
+  "payment-handler": {
     "type": "javascript",
-    "keywords": ["payment handler", "paymentManager"]
+    "keywords": [
+      "payment handler",
+      "paymentManager"
+    ]
   },
-  "https://w3c.github.io/payment-method-manifest/": {
-    "keywords": ["payment-method-manifest"]
+  "payment-method-manifest": {
+    "keywords": [
+      "payment-method-manifest"
+    ]
   },
-  "https://w3c.github.io/webauthn/": {
-    "tags": ["webauthn"]
+  "webauthn": {
+    "tags": [
+      "webauthn"
+    ]
   },
-  "https://w3c.github.io/did-core/": {
-    "tags": ["decentralized-identity"]
+  "did-core": {
+    "tags": [
+      "decentralized-identity"
+    ]
   },
-  "https://w3c.github.io/FileAPI/": {
+  "FileAPI": {
     "type": "javascript",
-    "tags": ["filereader"]
+    "tags": [
+      "filereader"
+    ]
   },
-  "https://w3c.github.io/IndexedDB/": {
-    "tags": ["indexeddb"]
+  "IndexedDB": {
+    "tags": [
+      "indexeddb"
+    ]
   },
-  "https://w3c.github.io/input-events/": {
-    "keywords": ["insertCompositionText", "insertFromComposition", "getTargetRanges", ["InputEvent", "[javascript]"]]
+  "input-events": {
+    "keywords": [
+      "insertCompositionText",
+      "insertFromComposition",
+      "getTargetRanges",
+      [
+        "InputEvent",
+        "[javascript]"
+      ]
+    ]
   },
-  "https://w3c.github.io/pointerlock/": {
-    "keywords": ["pointerlockchange", "pointerlockerror", "requestPointerLock"]
+  "pointerlock": {
+    "keywords": [
+      "pointerlockchange",
+      "pointerlockerror",
+      "requestPointerLock"
+    ]
   },
-  "https://w3c.github.io/selection-api/": {
-    "keywords": [["[javascript]", "selectionstart"], ["[javascript]", "selectionchange"], ["[javascript]", "getSelection"]]
+  "selection-api": {
+    "keywords": [
+      [
+        "[javascript]",
+        "selectionstart"
+      ],
+      [
+        "[javascript]",
+        "selectionchange"
+      ],
+      [
+        "[javascript]",
+        "getSelection"
+      ]
+    ]
   },
-  "https://w3c.github.io/uievents/": {
+  "uievents": {
     "type": "javascript",
-    "tags": ["mousewheel", "mouseevent", "touch-event"],
-    "keywords": ["MouseEvent", "WheelEvent", "KeyboardEvent", "CompositionEvent", "UIEvent", "FocusEvent", "blur", "focus", "focusin", "focusout", "auxclick", "mousedown", "mouseenter", "mouseleave", "mousemove", "mouseout", "mouseover", "mouseup", "wheel", "beforeinput", "keydown", "keyup", "compositionstart", "compositionupdate", "compositionend"]
+    "tags": [
+      "mousewheel",
+      "mouseevent",
+      "touch-event"
+    ],
+    "keywords": [
+      "MouseEvent",
+      "WheelEvent",
+      "KeyboardEvent",
+      "CompositionEvent",
+      "UIEvent",
+      "FocusEvent",
+      "blur",
+      "focus",
+      "focusin",
+      "focusout",
+      "auxclick",
+      "mousedown",
+      "mouseenter",
+      "mouseleave",
+      "mousemove",
+      "mouseout",
+      "mouseover",
+      "mouseup",
+      "wheel",
+      "beforeinput",
+      "keydown",
+      "keyup",
+      "compositionstart",
+      "compositionupdate",
+      "compositionend"
+    ]
   },
-  "https://w3c.github.io/web-share/": {
-    "keywords": ["Web Share", "navigator.share"]
+  "web-share": {
+    "keywords": [
+      "Web Share",
+      "navigator.share"
+    ]
   },
-  "https://w3c.github.io/clipboard-apis/": {
-    "keywords": ["clipboardchange", "navigator.clipboard"]
+  "clipboard-apis": {
+    "keywords": [
+      "clipboardchange",
+      "navigator.clipboard"
+    ]
   },
-  "https://w3c.github.io/gamepad/": {
-    "tags": ["gamepad-api"],
-    "keywords": ["getGamepads"]
+  "gamepad": {
+    "tags": [
+      "gamepad-api"
+    ],
+    "keywords": [
+      "getGamepads"
+    ]
   },
-  "https://w3c.github.io/IntersectionObserver/": {
-    "tags": ["intersection-observer"],
-    "keywords": ["IntersectionObserver"]
+  "intersection-observer": {
+    "tags": [
+      "intersection-observer"
+    ],
+    "keywords": [
+      "IntersectionObserver"
+    ]
   },
-  "https://w3c.github.io/push-api/": {
-    "tags": ["push-api"],
-    "keywords": ["pushManager"]
+  "push-api": {
+    "tags": [
+      "push-api"
+    ],
+    "keywords": [
+      "pushManager"
+    ]
   },
-  "https://w3c.github.io/screen-orientation/": {
-    "keywords": [["[javascript]", "screen.orientation"], "screen.orientation.lock"]
+  "screen-orientation": {
+    "keywords": [
+      [
+        "[javascript]",
+        "screen.orientation"
+      ],
+      "screen.orientation.lock"
+    ]
   },
-  "https://w3c.github.io/manifest/": {
-    "tags": [["manifest", "html"]],
-    "keywords": [["[html]", "link", "manifest"], "webmanifest", "beforeinstallprompt", "appinstalled"]
+  "appmanifest": {
+    "tags": [
+      [
+        "manifest",
+        "html"
+      ]
+    ],
+    "keywords": [
+      [
+        "[html]",
+        "link",
+        "manifest"
+      ],
+      "webmanifest",
+      "beforeinstallprompt",
+      "appinstalled"
+    ]
   },
-  "https://w3c.github.io/wcag/guidelines/": {
-    "tags": ["wcag", "wcag2.0"]
+  "WCAG": {
+    "tags": [
+      "wcag",
+      "wcag2.0"
+    ]
   },
-  "https://w3c.github.io/aria/": {
-    "tags": ["wai-aria"]
+  "wai-aria": {
+    "tags": [
+      "wai-aria"
+    ]
   },
-  "https://w3c.github.io/webdriver/": {
-    "tags": ["webdriver", "selenium-webdriver"],
-    "keywords": ["webdriver", ["webdriver", "css-selectors"], ["webdriver", "xpath"]]
+  "webdriver": {
+    "tags": [
+      "webdriver",
+      "selenium-webdriver"
+    ],
+    "keywords": [
+      "webdriver",
+      [
+        "webdriver",
+        "css-selectors"
+      ],
+      [
+        "webdriver",
+        "xpath"
+      ]
+    ]
   },
-  "https://w3c.github.io/sensors/": {
+  "generic-sensor": {
     "type": "javascript",
-    "tags": ["sensors"],
-    "keywords": ["generic sensor"]
+    "tags": [
+      "sensors"
+    ],
+    "keywords": [
+      "generic sensor"
+    ]
   },
-  "https://w3c.github.io/deviceorientation/": {
+  "orientation-event": {
     "type": "javascript",
-    "tags": ["orientation", "devicemotion"],
-    "keywords": ["deviceorientation", "deviceorientationevent", "devicemotionevent", "device orientation"]
+    "tags": [
+      "orientation",
+      "devicemotion"
+    ],
+    "keywords": [
+      "deviceorientation",
+      "deviceorientationevent",
+      "devicemotionevent",
+      "device orientation"
+    ]
   },
-  "https://w3c.github.io/accelerometer/": {
+  "accelerometer": {
     "type": "javascript",
-    "tags": ["accelerometer"]
+    "tags": [
+      "accelerometer"
+    ]
   },
-  "https://w3c.github.io/magnetometer/": {
+  "magnetometer": {
     "type": "javascript",
-    "tags": ["magnetometer"]
+    "tags": [
+      "magnetometer"
+    ]
   },
-  "https://w3c.github.io/orientation-sensor/": {
+  "orientation-sensor": {
     "type": "javascript",
-    "keywords": ["AbsoluteOrientationSensor", "OrientationSensor"]
+    "keywords": [
+      "AbsoluteOrientationSensor",
+      "OrientationSensor"
+    ]
   },
-  "https://w3c.github.io/ambient-light/": {
-
-  },
-  "https://w3c.github.io/proximity/": {
-
-  },
-  "https://w3c.github.io/geolocation-sensor/": {
-  },
-  "https://w3c.github.io/battery/": {
-
-  },
-  "https://w3c.github.io/wake-lock/": {
-  },
-  "https://w3c.github.io/geolocation-api/": {
+  "ambient-light": {},
+  "proximity": {},
+  "geolocation-sensor": {},
+  "battery-status": {},
+  "screen-wake-lock": {},
+  "geolocation-API": {
     "type": "javascript",
-    "tags": ["geolocation"]
+    "tags": [
+      "geolocation"
+    ]
   },
-  "https://w3c.github.io/vibration/": {
-    "tags": [["vibration","javascript"]],
-    "keywords": ["navigator.vibrate"]
+  "vibration": {
+    "tags": [
+      [
+        "vibration",
+        "javascript"
+      ]
+    ],
+    "keywords": [
+      "navigator.vibrate"
+    ]
   },
-  "https://w3c.github.io/trace-context/": {
-    "keywords": ["traceparent", "tracestate"]
+  "trace-context": {
+    "keywords": [
+      "traceparent",
+      "tracestate"
+    ]
   },
-  "https://w3c.github.io/json-ld-syntax/": {
-    "tags": ["json-ld"]
+  "json-ld-syntax": {
+    "tags": [
+      "json-ld"
+    ]
   },
-  "https://w3c.github.io/encrypted-media/": {
-    "tags": ["eme"]
+  "encrypted-media": {
+    "tags": [
+      "eme"
+    ]
   },
-  "https://w3c.github.io/media-source/": {
-    "tags": ["media-source"]
+  "media-source": {
+    "tags": [
+      "media-source"
+    ]
   },
-  "https://w3c.github.io/picture-in-picture/": {
-    "tags": [["picture-in-picture", "javascript"]],
-    "keywords": ["enterpictureinpicture", "leavepictureinpicture", "exitPictureInPicture()", "requestPictureInPicture", "pictureInPictureElement"]
+  "picture-in-picture": {
+    "tags": [
+      [
+        "picture-in-picture",
+        "javascript"
+      ]
+    ],
+    "keywords": [
+      "enterpictureinpicture",
+      "leavepictureinpicture",
+      "exitPictureInPicture()",
+      "requestPictureInPicture",
+      "pictureInPictureElement"
+    ]
   },
-  "https://w3c.github.io/media-capabilities/": {
+  "media-capabilities": {
     "type": "javascript",
-    "keywords": ["mediaCapabilities", "decodingInfo", "encodingInfo"]
+    "keywords": [
+      "mediaCapabilities",
+      "decodingInfo",
+      "encodingInfo"
+    ]
   },
-  "https://w3c.github.io/media-playback-quality/": {
+  "media-playback-quality": {
     "type": "javascript",
-    "keywords": ["getVideoPlaybackQuality"]
+    "keywords": [
+      "getVideoPlaybackQuality"
+    ]
   },
-  "https://w3c.github.io/mediasession/": {
+  "mediasession": {
     "type": "javascript",
-    "tags": ["mediasession"],
-    "keywords": ["mediaSession"]
+    "tags": [
+      "mediasession"
+    ],
+    "keywords": [
+      "mediaSession"
+    ]
   },
-  "https://w3c.github.io/pointerevents/": {
-    "tags": [["pointer-events", "javascript"]],
-    "keywords": ["PointerEvent", "pointercancel", "pointerdown", "pointermove", "pointerover"]
+  "pointerevents": {
+    "tags": [
+      [
+        "pointer-events",
+        "javascript"
+      ]
+    ],
+    "keywords": [
+      "PointerEvent",
+      "pointercancel",
+      "pointerdown",
+      "pointermove",
+      "pointerover"
+    ]
   },
-  "https://w3c.github.io/pub-manifest/": {
-  },
-  "https://w3c.github.io/audiobooks/": {
-  },
-  "https://w3c.github.io/presentation-api/": {
+  "presentation-api": {
     "type": "javascript",
-    "keywords": ["PresentationRequest"]
+    "keywords": [
+      "PresentationRequest"
+    ]
   },
-  "https://w3c.github.io/remote-playback/": {
+  "remote-playback": {
     "type": "javascript",
-    "keywords": ["watchAvailability"]
+    "keywords": [
+      "watchAvailability"
+    ]
   },
-  "https://mathml-refresh.github.io/mathml-core/": {
-    "tags": ["mathml"]
+  "mathml-core": {
+    "tags": [
+      "mathml"
+    ]
   },
-  "https://svgwg.org/svg2-draft/": {
-    "tags": ["svg"]
+  "SVG": {
+    "tags": [
+      "svg"
+    ]
   },
-  "https://w3c.github.io/webvtt/": {
-    "tags": ["webvtt"]
+  "webvtt": {
+    "tags": [
+      "webvtt"
+    ]
   },
-  "https://w3c.github.io/ttml1/": {
-    "tags": ["ttml"],
-    "keywords": ["ttml"]
+  "ttml": {
+    "tags": [
+      "ttml"
+    ],
+    "keywords": [
+      "ttml"
+    ]
   },
-  "https://w3c.github.io/vc-data-model/": {
-    "keywords": ["verifiable credential", "verifiable claim"]
+  "vc-data-model": {
+    "keywords": [
+      "verifiable credential",
+      "verifiable claim"
+    ]
   },
-  "https://w3c.github.io/webappsec-csp/": {
-    "tags": ["content-security-policy"]
+  "CSP": {
+    "tags": [
+      "content-security-policy"
+    ]
   },
-  "https://w3c.github.io/webappsec-subresource-integrity/": {
-    "tags": ["subresource-integrity"]
+  "SRI": {
+    "tags": [
+      "subresource-integrity"
+    ]
   },
-  "https://w3c.github.io/webappsec-mixed-content/": {
-    "tags": ["mixed-content"]
+  "mixed-content": {
+    "tags": [
+      "mixed-content"
+    ]
   },
-  "https://w3c.github.io/webappsec-secure-contexts/": {
-    "keywords": ["isSecureContext"]
+  "secure-contexts": {
+    "keywords": [
+      "isSecureContext"
+    ]
   },
-  "https://w3c.github.io/webappsec-upgrade-insecure-requests/": {
-    "tags": ["upgrade-insecure-requests"],
-    "keywords": ["upgrade-insecure-requests"]
+  "upgrade-insecure-requests": {
+    "tags": [
+      "upgrade-insecure-requests"
+    ],
+    "keywords": [
+      "upgrade-insecure-requests"
+    ]
   },
-  "https://w3c.github.io/webappsec-credential-management/": {
-    "keywords": ["navigator.credentials"]
+  "credential-management": {
+    "keywords": [
+      "navigator.credentials"
+    ]
   },
-  "https://w3c.github.io/webappsec-clear-site-data/": {
-    "keywords": ["clear-site-data"]
+  "clear-site-data": {
+    "keywords": [
+      "clear-site-data"
+    ]
   },
-  "https://w3c.github.io/webappsec-referrer-policy/": {
-    "tags": ["referrer-policy"]
+  "referrer-policy": {
+    "tags": [
+      "referrer-policy"
+    ]
   },
-  "https://w3c.github.io/permissions/": {
-    "keywords": ["navigator.permissions"]
+  "permissions": {
+    "keywords": [
+      "navigator.permissions"
+    ]
   },
-  "https://w3c.github.io/woff/woff2/": {
-    "tags": ["woff", "woff2"]
+  "WOFF": {
+    "tags": [
+      "woff",
+      "woff2"
+    ]
   },
-  "https://webassembly.github.io/spec/core/bikeshed/": {
-    "tags": ["webassembly"]
+  "wasm-core": {
+    "tags": [
+      "webassembly"
+    ]
   },
-  "https://webassembly.github.io/spec/web-api/": {
-    "keywords": ["compileStreaming", "instantiateStreaming"]
+  "wasm-web-api": {
+    "keywords": [
+      "compileStreaming",
+      "instantiateStreaming"
+    ]
   },
-  "https://webassembly.github.io/spec/js-api/": {
-    "keywords": ["WebAssembly.instantiate"]
+  "wasm-js-api": {
+    "keywords": [
+      "WebAssembly.instantiate"
+    ]
   },
-  "https://w3c.github.io/longtasks/": {
-    "keywords": [["PerformanceObserver","longtask"]]
+  "longtasks": {
+    "keywords": [
+      [
+        "PerformanceObserver",
+        "longtask"
+      ]
+    ]
   },
-  "https://w3c.github.io/paint-timing/": {
-    "keywords": [["PerformanceObserver","first-paint"], ["PerformanceObserver","first-contentful-paint"]]
+  "paint-timing": {
+    "keywords": [
+      [
+        "PerformanceObserver",
+        "first-paint"
+      ],
+      [
+        "PerformanceObserver",
+        "first-contentful-paint"
+      ]
+    ]
   },
-  "https://w3c.github.io/page-visibility/": {
-    "keywords": ["visibilityState", "visibilitychange"]
+  "page-visibility": {
+    "keywords": [
+      "visibilityState",
+      "visibilitychange"
+    ]
   },
-  "https://w3c.github.io/requestidlecallback/": {
-    "tags": ["requestidlecallback"],
-    "keywords": ["requestIdleCallback"]
+  "requestidlecallback": {
+    "tags": [
+      "requestidlecallback"
+    ],
+    "keywords": [
+      "requestIdleCallback"
+    ]
   },
-  "https://wicg.github.io/frame-timing/": {
-    "keywords": [["PerformanceObserver","frame"]]
+  "frame-timing": {
+    "keywords": [
+      [
+        "PerformanceObserver",
+        "frame"
+      ]
+    ]
   },
-  "https://w3c.github.io/network-error-logging/": {
-    "keywords": ["network error logging"]
+  "network-error-logging": {
+    "keywords": [
+      "network error logging"
+    ]
   },
-  "https://w3c.github.io/beacon/": {
-    "tags": ["sendbeacon"],
-    "keywords": ["sendBeacon"]
+  "beacon": {
+    "tags": [
+      "sendbeacon"
+    ],
+    "keywords": [
+      "sendBeacon"
+    ]
   },
-  "https://w3c.github.io/resource-timing/": {
-    "keywords": [["performance.getEntriesByType", "resource"]]
+  "resource-timing": {
+    "keywords": [
+      [
+        "performance.getEntriesByType",
+        "resource"
+      ]
+    ]
   },
-  "https://w3c.github.io/device-memory/": {
-    "keywords": ["navigator.deviceMemory"]
+  "device-memory": {
+    "keywords": [
+      "navigator.deviceMemory"
+    ]
   },
-  "https://w3c.github.io/user-timing/": {
-    "keywords": ["performance.mark", "performance.measure", ["performance.getEntriesByType", "mark"]]
+  "user-timing": {
+    "keywords": [
+      "performance.mark",
+      "performance.measure",
+      [
+        "performance.getEntriesByType",
+        "mark"
+      ]
+    ]
   },
-  "https://w3c.github.io/reporting/": {
-    "keywords": ["ReportingObserver", ["Report-To", "endpoints"]]
+  "reporting": {
+    "keywords": [
+      "ReportingObserver",
+      [
+        "Report-To",
+        "endpoints"
+      ]
+    ]
   },
-  "https://w3c.github.io/preload/": {
-    "keywords": [["link", "preload"]]
+  "preload": {
+    "keywords": [
+      [
+        "link",
+        "preload"
+      ]
+    ]
   },
-  "https://w3c.github.io/server-timing/": {
-    "keywords": ["serverTiming"]
+  "server-timing": {
+    "keywords": [
+      "serverTiming"
+    ]
   },
-  "https://w3c.github.io/resource-hints/": {
-    "keywords": [["link", "preconnect"],["link", "prefetch"],["link", "prerender"],["link", "dns-prefetch"]]
+  "resource-hints": {
+    "keywords": [
+      [
+        "link",
+        "preconnect"
+      ],
+      [
+        "link",
+        "prefetch"
+      ],
+      [
+        "link",
+        "prerender"
+      ],
+      [
+        "link",
+        "dns-prefetch"
+      ]
+    ]
   },
-  "https://w3c.github.io/hr-time/": {
-    "keywords": ["performance.now", "performance.timeOrigin"]
+  "hr-time": {
+    "keywords": [
+      "performance.now",
+      "performance.timeOrigin"
+    ]
   },
-  "https://w3c.github.io/performance-timeline/": {
-    "keywords": ["PerformanceObserver"]
+  "performance-timeline": {
+    "keywords": [
+      "PerformanceObserver"
+    ]
   },
-  "https://w3c.github.io/navigation-timing/": {
-    "keywords": [["performance.getEntriesByType", "navigation"]]
+  "navigation-timing": {
+    "keywords": [
+      [
+        "performance.getEntriesByType",
+        "navigation"
+      ]
+    ]
   },
-  "https://wicg.github.io/speech-api/": {
-    "tags": ["webspeech-api"]
+  "speech-api": {
+    "tags": [
+      "webspeech-api"
+    ]
   },
-  "https://browserext.github.io/browserext/": {
-    "tags": ["browser-extension"]
+  "browserext": {
+    "tags": [
+      "browser-extension"
+    ]
   },
-  "https://w3c.github.io/webcrypto/": {
-    "tags": ["webcrypto-api"]
+  "WebCryptoAPI": {
+    "tags": [
+      "webcrypto-api"
+    ]
   },
-  "https://webbluetoothcg.github.io/web-bluetooth/": {
-    "tags": ["web-bluetooth"]
+  "web-bluetooth": {
+    "tags": [
+      "web-bluetooth"
+    ]
   },
-  "https://w3c.github.io/web-nfc/": {
-    "tags": ["webnfc"]
+  "web-nfc": {
+    "tags": [
+      "webnfc"
+    ]
   },
-  "https://wicg.github.io/webusb/": {
-    "tags": ["webusb"]
+  "webusb": {
+    "tags": [
+      "webusb"
+    ]
   },
-  "https://w3c.github.io/setImmediate/": {
-    "tags": ["setimmediate"]
-  },
-  "https://wicg.github.io/background-sync/spec/": {
+  "background-sync": {
     "type": "javascript",
-    "tags": [["background-sync", "javascript"]]
+    "tags": [
+      [
+        "background-sync",
+        "javascript"
+      ]
+    ]
   },
-  "https://www.khronos.org/registry/webgl/specs/latest/1.0/": {
-    "tags": ["webgl"]
+  "webgl1": {
+    "tags": [
+      "webgl"
+    ]
   },
-  "https://drafts.css-houdini.org/css-paint-api/": {
-    "tags": ["css-paint-api"]
+  "css-paint-api": {
+    "tags": [
+      "css-paint-api"
+    ]
   },
-  "https://drafts.fxtf.org/filter-effects/": {
-    "tags": ["css-filters"]
+  "filter-effects": {
+    "tags": [
+      "css-filters"
+    ]
   },
-  "https://drafts.fxtf.org/compositing/": {
-    "tags": ["mix-blend-mode", "background-blend-mode"]
+  "compositing": {
+    "tags": [
+      "mix-blend-mode",
+      "background-blend-mode"
+    ]
   },
-  "https://drafts.fxtf.org/css-masking/": {
-    "tags": ["clip-path", "css-mask"]
+  "css-masking": {
+    "tags": [
+      "clip-path",
+      "css-mask"
+    ]
   },
-  "https://drafts.fxtf.org/geometry/": {
-    "keywords": ["DOMMatrix", "DOMPoint", "DOMRect", "DOMRectList", "DOMQuad"]
+  "geometry": {
+    "keywords": [
+      "DOMMatrix",
+      "DOMPoint",
+      "DOMRect",
+      "DOMRectList",
+      "DOMQuad"
+    ]
   },
-  "https://drafts.csswg.org/mediaqueries/": {
-    "tags": ["media-queries"]
+  "mediaqueries": {
+    "tags": [
+      "media-queries"
+    ]
   },
-  "https://drafts.csswg.org/css-fonts/": {
-    "tags": ["webfonts", "font-face", "font-family", "font-size"]
+  "css-fonts": {
+    "tags": [
+      "webfonts",
+      "font-face",
+      "font-family",
+      "font-size"
+    ]
   },
-  "https://drafts.csswg.org/css-flexbox/": {
-    "tags": ["flexbox"]
+  "css-flexbox": {
+    "tags": [
+      "flexbox"
+    ]
   },
-  "https://drafts.csswg.org/css-grid/": {
-    "tags": ["css-grid"]
+  "css-grid": {
+    "tags": [
+      "css-grid"
+    ]
   },
-  "https://drafts.csswg.org/css-box/": {
-    "tags": ["css-float"]
+  "css-box": {
+    "tags": [
+      "css-float"
+    ]
   },
-  "https://drafts.csswg.org/css-position/": {
-    "tags": ["css-position"]
+  "css-position": {
+    "tags": [
+      "css-position"
+    ]
   },
-  "https://drafts.csswg.org/selectors/": {
-    "tags": ["css-selectors", "pseudo-class"]
+  "selectors": {
+    "tags": [
+      "css-selectors",
+      "pseudo-class"
+    ]
   },
-  "https://drafts.csswg.org/css-values/": {
-    "tags": ["css-calc"]
+  "css-values": {
+    "tags": [
+      "css-calc"
+    ]
   },
-  "https://drafts.csswg.org/css-variables/": {
-    "tags": ["css-variables"]
+  "css-variables": {
+    "tags": [
+      "css-variables"
+    ]
   },
-  "https://drafts.csswg.org/css-animations/": {
-    "tags": ["css-animations"]
+  "css-animations": {
+    "tags": [
+      "css-animations"
+    ]
   },
-  "https://drafts.csswg.org/css-transforms/": {
-    "tags": ["css-transforms"]
+  "css-transforms": {
+    "tags": [
+      "css-transforms"
+    ]
   },
-  "https://drafts.csswg.org/css-transitions/": {
-    "tags": ["css-transitions"]
+  "css-transitions": {
+    "tags": [
+      "css-transitions"
+    ]
   },
-  "https://drafts.csswg.org/css-shapes/": {
-    "tags": ["css-shapes"]
+  "css-shapes": {
+    "tags": [
+      "css-shapes"
+    ]
   },
-  "https://drafts.csswg.org/css-tables/": {
-    "tags": ["css-tables"]
+  "css-tables": {
+    "tags": [
+      "css-tables"
+    ]
   },
-  "https://drafts.csswg.org/css-multicol/": {
-    "tags": ["css-multicolumn-layout"]
+  "css-multicol": {
+    "tags": [
+      "css-multicolumn-layout"
+    ]
   },
-  "https://drafts.csswg.org/css-page/": {
-    "tags": ["css-paged-media"]
+  "css-page": {
+    "tags": [
+      "css-paged-media"
+    ]
   },
-  "https://drafts.csswg.org/css-pseudo/": {
-    "tags": ["pseudo-element"]
+  "css-pseudo": {
+    "tags": [
+      "pseudo-element"
+    ]
   },
-  "https://drafts.csswg.org/css-pseudo/": {
-    "tags": ["pseudo-element"]
+  "css-lists": {
+    "tags": [
+      "css-counter"
+    ]
   },
-  "https://drafts.csswg.org/css-lists/": {
-    "tags": ["css-counter"]
+  "css-cascade": {
+    "tags": [
+      "css-cascade"
+    ]
   },
-  "https://drafts.csswg.org/css-cascade/": {
-    "tags": ["css-cascade"]
+  "cssom": {
+    "tags": [
+      "cssom"
+    ]
   },
-  "https://drafts.csswg.org/cssom/": {
-    "tags": ["cssom"]
+  "dom": {
+    "tags": [
+      "dom",
+      "shadow-dom",
+      "dom-events",
+      "domparser"
+    ]
   },
-  "https://dom.spec.whatwg.org/": {
-    "tags": ["dom", "shadow-dom", "dom-events", "domparser"]
+  "fetch": {
+    "tags": [
+      "fetch",
+      "fetch-api",
+      "cors",
+      "preflight"
+    ],
+    "keywords": [
+      "access-control-allow-origin"
+    ]
   },
-  "https://fetch.spec.whatwg.org/": {
-    "tags": ["fetch", "fetch-api", "cors", "preflight"],
-    "keywords": ["access-control-allow-origin"]
+  "xhr": {
+    "tags": [
+      "xmlhttprequest"
+    ]
   },
-  "https://xhr.spec.whatwg.org/": {
-    "tags": ["xmlhttprequest"]
+  "notifications": {
+    "tags": [
+      "web-notifications",
+      "html5-notifications"
+    ]
   },
-  "https://notifications.spec.whatwg.org/": {
-    "tags": ["web-notifications", "html5-notifications"]
+  "streams": {
+    "tags": [
+      "whatwg-streams-api"
+    ],
+    "keywords": [
+      "ReadableStream"
+    ]
   },
-  "https://streams.spec.whatwg.org/": {
-    "tags": ["whatwg-streams-api"],
-    "keywords": ["ReadableStream"]
+  "html": {
+    "features": [
+      {"name": "generic",
+       "tags": [
+         "websocket",
+         "server-sent-events",
+         "eventsource",
+         "local-storage",
+         "web-worker",
+         "html5-video",
+         "html5-audio",
+         "html5-history",
+         "html5-appcache",
+         "html-parsing",
+         "xhtml",
+         "lazy-loading",
+         "multipartform-data",
+         "multipart",
+         "meta-tags"
+       ]
+      },
+      {"name": "canvas",
+       "tags": [
+         "html5-canvas",
+         "canvas"
+       ]
+      },
+      {"name": "custom-elements",
+       "tags": [
+         "custom-element",
+         "web-component",
+         "html5-template",
+         "html-imports"
+       ]
+      },
+      {"name": "content-editable",
+       "tags": [
+         "contenteditable",
+         "execcommand"
+       ]
+      }
+    ]
   },
-  "https://html.spec.whatwg.org/": {
-    "tags": ["websocket", "server-sent-events", "eventsource", "local-storage", "web-worker", "html5-video", "html5-audio", "html5-history", "html5-appcache", "html-parsing", "xhtml", "lazy-loading", "multipartform-data", "multipart", "meta-tags"]
-  },
-  "https://html.spec.whatwg.org/#2dcontext": {
-    "tags": ["html5-canvas", "canvas"]
-  },
-  "https://html.spec.whatwg.org/#custom-elements": {
-    "tags": ["custom-element", "web-component", "html5-template", "html-imports"]
-  },
-  "https://html.spec.whatwg.org/#contenteditable": {
-    "tags": ["contenteditable", "execcommand"]
-  },
-  "https://gpuweb.github.io/gpuweb/": {
-    "tags": ["webgpu"]
+  "gpuweb": {
+    "tags": [
+      "webgpu"
+    ]
   }
 }
